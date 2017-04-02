@@ -1,0 +1,18 @@
+body {
+    @include user-select(none);
+    line-height: $base-line-height;
+    font-family: $base-font-family;
+    font-weight: $base-font-weight;
+    background: $base-background;
+    font-size: $base-font-size;
+    color: $base-color;
+}
+
+* {
+    @include box-sizing( border-box);
+
+    &:after,
+    &:before {
+        @include box-sizing( border-box);
+    }
+}

@@ -1,0 +1,204 @@
+/*
+* transition
+*/
+
+@mixin transition ($option) {
+	-webkit-transition: $option;
+	-moz-transition: $option;
+	transition: $option;
+}
+
+
+/*
+* transform
+*/
+
+@mixin transform ($option) {
+	-webkit-transform: $option;
+	-moz-transform: $option;
+	transform: $option;
+}
+
+@mixin transform-origin ($option) {
+	-webkit-transform-origin: $option;
+	-moz-transform-origin: $option;
+	transform-origin: $option;
+}
+
+
+/*
+* animation
+*/
+
+@mixin animation ($option) {
+	-webkit-animation: $option;
+	-moz-animation: $option;
+	animation: $option;
+}
+
+@mixin animation-name ($option) {
+	-webkit-animation-name: $option;
+	-moz-animation-name: $option;
+	animation-name: $option;
+}
+
+@mixin animation-duration ($option) {
+	-webkit-animation-duration: $option;
+	-moz-animation-duration: $option;
+	animation-duration: $option;
+}
+
+@mixin animation-timing-function ($option) {
+	-webkit-animation-timing-function: $option;
+	-moz-animation-timing-function: $option;
+	animation-timing-function: $option;
+}
+
+@mixin animation-delay ($option) {
+	-webkit-animation-delay: $option;
+	-moz-animation-delay: $option;
+	animation-delay: $option;
+}
+
+@mixin animation-iteration-count ($option) {
+	-webkit-animation-iteration-count: $option;
+	-moz-animation-iteration-count: $option;
+	animation-iteration-count: $option;
+}
+
+@mixin animation-direction ($option) {
+	-webkit-animation-direction: $option;
+	-moz-animation-direction: $option;
+	animation-direction: $option;
+}
+
+@mixin animation-fill-mode ($option) {
+	-webkit-animation-fill-mode: $option;
+	-moz-animation-fill-mode: $option;
+	animation-fill-mode: $option;
+}
+
+@mixin animation-play-state ($option) {
+	-webkit-animation-play-state: $option;
+	-moz-animation-play-state: $option;
+	animation-play-state: $option;
+}
+
+
+/*
+* flexbox
+*/
+
+@mixin flexbox () {
+	display: -webkit-box;
+	/* OLD - iOS 6-, Safari 3.1-6 */
+	display: -webkit-flex;
+	/* NEW - Chrome */
+	display: -ms-flexbox;
+	/* TWEENER - IE 10 */
+	display: flex;
+	/* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+@mixin flexbox-inline () {
+	display: -webkit-inline-box;
+	/* OLD - iOS 6-, Safari 3.1-6 */
+	display: -webkit-inline-flex;
+	/* NEW - Chrome */
+	display: -ms-inline-flexbox;
+	/* TWEENER - IE 10 */
+	display: inline-flex;
+	/* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+@mixin flex ($option) {
+	-webkit-box-flex: $option;
+	/* OLD - iOS 6-, Safari 3.1-6 */
+	-webkit-flex: $option;
+	/* Chrome */
+	-ms-flex: $option;
+	/* IE 10 */
+	flex: $option;
+	/* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+@mixin order ($option) {
+	-webkit-box-ordinal-group: $option;
+	/* OLD - iOS 6-, Safari 3.1-6 */
+	-ms-flex-order: $option;
+	/* TWEENER - IE 10 */
+	-webkit-order: $option;
+	/* NEW - Chrome */
+	order: $option;
+	/* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+@mixin flex-direction ($option) {
+	-webkit-flex-direction: $option;
+	-ms-flex-direction: $option;
+	flex-direction: $option;
+}
+
+@mixin flex-direction ($option) {
+	-webkit-flex-direction: $option;
+	-ms-flex-direction: $option;
+	flex-direction: $option;
+}
+
+@mixin justify-content ($option) {
+	-webkit-justify-content: $option;
+	-ms-justify-content: $option;
+	justify-content: $option;
+}
+
+@mixin align-items ($option) {
+	-webkit-align-items: $option;
+	-ms-align-items: $option;
+	align-items: $option;
+}
+
+@mixin align-content ($option) {
+	-webkit-align-content: $option;
+	-ms-align-content: $option;
+	align-content: $option;
+}
+
+@mixin align-self ($option) {
+	-webkit-align-self: $option;
+	-ms-align-self: $option;
+	align-self: $option;
+}
+
+@mixin flex-wrap ($option) {
+	-webkit-flex-wrap: $option;
+	-ms-flex-wrap: $option;
+	flex-wrap: $option;
+}
+
+
+/*
+* random
+*/
+
+@mixin user-select ($option) {
+	-webkit-touch-callout: $option;
+	-webkit-user-select: $option;
+	-moz-user-select: $option;
+	-ms-user-select: $option;
+	user-select: $option;
+}
+
+@mixin box-sizing ($option) {
+	-webkit-box-sizing: $option;
+	-moz-box-sizing: $option;
+	box-sizing: $option;
+}
+
+@mixin keyframes( $animation-name ) {
+	@-webkit-keyframes #{$animation-name} {
+		@content;
+	}
+	@keyframes #{$animation-name} {
+		@content;
+	}
+}

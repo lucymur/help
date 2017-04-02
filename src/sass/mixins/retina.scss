@@ -1,0 +1,13 @@
+@mixin screen-retina
+{
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+		@content;
+	}
+}
+
+@mixin not-screen-retina
+{
+	@media only screen and (-webkit-max-device-pixel-ratio: 1.4999), only screen and (max--moz-device-pixel-ratio: 1.4999), only screen and (max-device-pixel-ratio: 1.4999) {
+		@content;
+	}
+}
