@@ -1,0 +1,41 @@
+.button {
+    font-family: Roboto;
+    padding: 8px 13px;
+    text-align: center;
+    color: #313640;
+    border-radius: 20px;
+    background-color: #fbb034;
+    border: none;
+    &:hover {
+    	border-radius: 23px;
+        background-color: #fec66a;
+        text-decoration: none;
+        color: $brand-text-dark;
+    }
+
+    &:active {
+    	 border-radius: 23px;
+         background-color: #fdc66a;
+    }
+
+    &:focus {
+    	outline: none;
+    }
+}
+
+.button-view {
+    font-family: Roboto;
+    padding: 6px 13px;
+    text-align: center;
+    color: $brand-text-gray;
+    border-radius: 23px;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+     &:hover {
+        border-radius: 20px;
+        background-color: transparent;
+        text-decoration: underline;
+        color: $brand-text-dark;
+  }
+}

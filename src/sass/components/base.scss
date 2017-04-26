@@ -1,11 +1,11 @@
-body {
-    @include user-select(none);
-    line-height: $base-line-height;
-    font-family: $base-font-family;
-    font-weight: $base-font-weight;
-    background: $base-background;
-    font-size: $base-font-size;
-    color: $base-color;
+/*  body {
+        @include user-select(none);
+        line-height: $base-line-height;
+        font-family: $base-font-family;
+        font-weight: $base-font-weight;
+        background: $base-background;
+        font-size: $base-font-size;
+        color: $base-color;
 }
 
 * {
@@ -15,4 +15,46 @@ body {
     &:before {
         @include box-sizing( border-box);
     }
+}  */
+
+body {
+    font-family: Roboto, sans-serif, PT Sans ;
+   /* @media (max-width: $screen-md-max ) {
+        background: red;
+    }*/
 }
+
+
+p {
+    font-size: 19px;
+}
+
+a {
+    font-size: 15px;
+}
+
+h1 {
+    font-size: 46px;
+}
+
+h2 {
+    font-size: 38px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 21px;
+}
+
+h5 {
+    font-size: 15px;
+}
+
+img {
+    height: auto;
+}
+
+

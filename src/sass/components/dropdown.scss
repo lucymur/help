@@ -1,0 +1,132 @@
+.dropdown {
+	position: absolute;
+	left: -127%;
+	top: 103%;
+	z-index: 100;
+	list-style: none;
+	padding: 0;
+	box-shadow: 0 6px 24px 0 rgba(48, 54, 64, 0.08), 0 4px 12px 0 rgba(0, 0, 0, 0.04);
+	background: #fff;
+	border-radius: 4px;
+	width: 368px;
+	display: none;
+}
+.dropdomn-list {
+	padding: 0;
+	list-style: none;
+	width: 50%;
+	float: left;
+}
+
+.dropdown-title {
+	font-size: 17px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	&:hover {
+			color: $brand-text-gray;
+		}
+}
+
+.dropdown-text {
+	font-size: 15px;
+	color: $brand-text-gray ;
+	margin-bottom: 13px;
+}
+
+.dropdown-icons {
+	margin-right: 6px;
+}
+
+.dropdomn-item {
+	margin-bottom: 4px;
+	cursor: pointer;
+	font-size: 15px;
+	color: $brand-primary ;
+	&:hover {
+		color: $brand-text-dark ;
+		cursor: pointer;
+	}
+	a {
+		&:hover {
+			text-decoration: none;
+			color: $brand-text-dark ;
+		}
+	}
+}
+
+.dropdown-question {
+	background: $brand-input-fields-gray ;
+	text-align: center;
+    color: #7e838b;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px 0;
+    &:hover {
+    	color: $brand-text-dark ;
+    }
+}
+
+.dropdown-field {
+	padding: 27px 35px; 
+}
+
+.dropdown-block {
+	padding: 0;
+	list-style: none;
+}
+
+.dropdown-block_content {
+	margin-left: 45px;
+	display: block;
+	&:hover {
+		text-decoration: none;
+	}
+	h4 {
+		font-size: 17px;
+		color: $brand-text-dark;
+		margin-bottom: 5px;
+		cursor: pointer;
+		&:hover {
+			color: $brand-text-gray;
+		}
+	}
+	p {
+		font-size: 15px;
+		color: $brand-text-gray;
+	}
+}
+
+.dropdown-block_icon {
+	display: inline-block;
+	float: left;
+	font-size: 25px;
+}
+
+.dropdown {
+	background: #fff;
+	border: 1px solid rgba(204, 204, 204, 0.11);
+}
+
+.dropdown:after, .dropdown:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.dropdown:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #fff;
+	border-width: 12px;
+	margin-left: -12px;
+}
+.dropdown:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: rgba(204, 204, 204, 0.11);
+	border-width: 14px;
+	margin-left: -14px;
+}

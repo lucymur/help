@@ -60,7 +60,8 @@ module.exports = function () {
 			html: [
 				'index.html',
 				'frontpage.html',
-				'components.html'
+				'components.html',
+                'expertise.html',
 			],
 
 			/**

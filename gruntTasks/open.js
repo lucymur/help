@@ -1,5 +1,5 @@
 module.exports = {
     dev: {
-        path: 'http://0.0.0.0:3001'
+        path: 'http://localhost:3001'
     }
 };

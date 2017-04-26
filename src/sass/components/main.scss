@@ -1,0 +1,214 @@
+.hero {
+  height: 812px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+    @media  (max-width: 767px) {
+     height: 520px;
+ }
+}
+
+.hero-overlay:before {
+	content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.64);
+}
+
+.block-table {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+
+.block-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.hero-title {
+	  margin: 0 auto 35px;
+    max-width: 877px;
+    position: relative;
+    color: #fff;
+    @media  (max-width: 767px) {
+       padding: 0 18px;
+       }
+
+    p {
+      margin-bottom: 15px;
+        @media  (max-width: 767px) {
+        display: none;
+       }
+    }
+
+    h1 {
+      @media  (max-width: 767px) {
+       font-size: 38px;
+       margin-bottom: 15px;
+       }
+    }
+
+    a {
+      @media (max-width: 767px) {
+        font-size: 13px;
+        padding: 8px 13px;
+      }
+    }
+}
+
+.hero-entrance {
+	display: inline-block;
+	float: right;
+  margin-top: 6px;
+	a {
+	    font-family: Roboto;
+      font-size: 13px;
+      margin-left: 10px;
+      color: #313640;
+      display: inline-block;
+       @media  (max-width: 767px) {
+       display: none;
+     }
+	}
+}
+
+.insurance-title {
+    max-width: 689px;
+    margin: 60px auto 39px;
+    @media  (max-width: 767px) {
+     margin: 40px auto 20px;
+     font-size: 26px;
+ }
+}
+
+.insurance-box {
+  box-shadow: 0 2px 4px 0 rgba(48, 54, 64, 0.12);
+  background: #fff;
+   @media  (max-width: 767px) {
+      margin-bottom: 20px;
+     }
+}
+
+.insurance-content {
+  text-align: center;
+  font-size: 35px;
+  padding: 20px 50px;
+}
+
+.insurance-subject {
+  p {
+  font-size: 17px;
+ }
+}
+
+.fagomrader-caption {
+  text-align: center;
+  p {
+    font-size: 17px;
+    margin-bottom: 30px;
+      @media  (max-width: 767px) {
+      font-size: 15px;
+     }
+  }
+}
+
+.category-box {
+  height: 300px;
+  margin-bottom: 15px;
+  display: block;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.21);
+  }
+
+  &:after  {
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.fagomrader-section {
+  margin-top: 100px;
+  padding-bottom: 110px;
+  @media  (max-width: 767px) {
+     padding-bottom: 65px;
+     }
+  h3 {
+      @media  (max-width: 767px) {
+     font-size: 26px;
+     }
+  }
+}
+
+.communications {
+  background: $brand-input-fields-gray ;
+  padding: 30px 0;
+}
+
+.communications-content {
+  text-align: center;
+}
+
+.communications-tel {
+  color: $brand-primary;
+  font-size: 36px;
+   @media  (max-width: 767px) {
+    display: block;
+     }
+}
+
+.block-title {
+    color: #fff;
+    position: relative;
+}
+
+.block-row {
+  display: table-row;
+}
+
+.gik {
+      position: absolute;
+    z-index: 10000;
+    color: red;
+    display: none;
+    background: yellow;
+    width: 300px;
+    cursor: pointer;
+}
+
+.category-box_title {
+  font-size: 36px;
+}
+
+.category-box_subtitle {
+    display: inline-block;
+    padding: 5px 16px;
+    font-size: 15px;
+    margin-top: 5px;
+    color: #fff;
+    border-radius: 20px;
+    border: solid 2px rgba(177, 170, 170, 0.92);
+}
