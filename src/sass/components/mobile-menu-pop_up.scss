@@ -1,0 +1,6 @@
+.content-pusher {
+	transition: .5s all;
+	@media  (max-width: 900px) {
+    transform: translate(250px 0px);
+  }
+}

@@ -7,17 +7,22 @@
 }
 
 .header-logo {
-	display: inline-block;
 	float: left;
 	cursor: pointer;
 	img {
 		width: 110px;
+		 @media (max-width: 849px) {
+		width: 94px;
+	 }
 	}
 
 	 @media (max-width: 849px) {
 		text-align: center;
 		display: block;
 		float: none;
+	    width: 134px;
+	    max-width: 100%;
+        margin: 0 auto;
 	}
 }
 
@@ -54,6 +59,7 @@
 	color:  $brand-text-dark;
 	font-family: Roboto;
 	font-weight: 500;
+	-webkit-transition: all 0.5s linear;
 	display: inline-block;
 	&:hover {
 		text-decoration: none;
@@ -61,3 +67,38 @@
 	}
 }
 
+.navigation-trigger {
+    float: left;
+    padding: 11px 9px;
+    text-align: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    height: 100%;
+     @media (min-width: 850px) {
+		display: none;
+	}
+}
+
+ .icon-bar {
+    display: block;
+    background:  #313640;
+    height: 2px;
+    width: 19px;
+    border-radius: 1px;
+    margin:0 auto 3px;
+}
+
+.entrance-btn {
+  border: none;
+  background: transparent;
+  font-size: 13px;
+  color: #313640;
+  font-weight: 500;
+  display: inline-block;
+  float: right;
+  padding: 7px 0;
+   @media (min-width: 850px) {
+		display: none;
+	}
+}

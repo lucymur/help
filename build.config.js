@@ -62,6 +62,8 @@ module.exports = function () {
 				'frontpage.html',
 				'components.html',
                 'expertise.html',
+                'menu-mobile.html',
+                'inquiries.html'
 			],
 
 			/**

@@ -1,0 +1,59 @@
+.menumob_content {
+	left: 0;
+    right: 0;
+    z-index: 10000;
+    top: 0;
+    display: none;
+    background: #fff;
+    bottom: 0;
+    position: absolute;
+    border: 1px solid rgba(204, 204, 204, 0.46);
+}
+
+.mobile-nav-opened {
+	overflow: hidden;
+	.menumob_content {
+		display: block;
+	}
+}
+
+.menumob-accordion-title {
+	font-weight: 500;
+    font-size: 15px;
+    color: $brand-text-dark ;
+}
+
+.menumob-accordion-list {
+	list-style: none;
+	padding-left: 30px;
+}
+
+.menumob-accordion-link {
+	color: $brand-text-gray ;
+	padding: 5px 0;
+    display: inline-block;
+    font-size: 14px;
+	&:hover {
+		text-decoration: none;
+		color: $brand-text-gray ;
+	}
+}
+
+.menumob-accordion-field {
+    padding: 20px 32px;
+}
+
+
+.menumob-accordion-communication {
+	padding: 12px 0;
+	text-align: center;
+	border-top: 1px solid $brand-input-lines ;
+	.button {
+		font-size: 13px;
+		padding: 8px 22px;
+	}
+}
+
+.menumob-accordion-close {
+	margin-bottom: 100px;
+}
